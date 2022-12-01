@@ -1,0 +1,48 @@
+##
+# @see https://prettier.io/docs/en/options.html
+# @since 2022/03/24 (prettir 2.7.1)
+##
+# 印刷幅(NOT 1行の最大文字数)
+printWidth: 120
+# インデントレベル毎のスペース数
+# tabWidth: 2
+# スペースの代わりにTABでインデント
+# useTabs: false
+# 行末にセミコロン(;)を付ける
+# semi: true
+# 文字列リテラルの囲いにシングルクォートを使う(JSXは除く)
+singleQuote: true # false -> true
+#
+# quoteProps: 'as-needed'
+# JSXで文字列リテラルの囲いにシングルクォートを使う
+jsxSingleQuote: true # false -> true
+# カンマ区切り構造の最終要素の後ろにカンマを付ける
+trailingComma: 'all' # es5 -> all
+# ブラケットの囲いの内側にスペースを入れる
+# bracketSpacing: true
+# 複数行のHTML要素宣言で開始タグの閉じ括弧(>)を改行＆インデントしない
+# bracketSameLine: false
+# アロー関数のパラメータ前後の括弧を付ける
+arrowParens: 'always' # avoid -> always
+# ファイルの指定セグメントのみをフォーマット
+# rangeStart: 0
+# rangeEnd: 'Infinity'
+# 使用するパーサーの指定(既定値なし:入力ファイルパスから自動判定)
+# parser: 'None'
+# filepath: 'None'
+# ファイルの先頭にプラグマコメントを持つファイルのみフォーマット対象とする
+# requirePragma: false
+# ファイルの先頭にプラグマコメントを自動挿入する
+# insertPragma: false
+# Markdownで平文を1行にまとめる
+# proseWrap: 'preserve'
+# HTML
+htmlWhitespaceSensitivity: 'ignore' # css -> ignore
+# Vue.js で <script> と <style> をインデントする
+# vueIndentScriptAndStyle: false
+# 改行コードの指定
+# endOfLine: 'lf'
+# Markdown などに埋め込まれた引用コードをフォーマット
+# embeddedLanguageFormatting: 'auto'
+# HTML要素宣言ですべての属性を同一行で記述させる
+# singleAttributePerLine: false

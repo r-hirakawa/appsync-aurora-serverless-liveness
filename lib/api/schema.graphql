@@ -1,0 +1,11 @@
+type Liveness {
+  status: String!
+}
+
+type Query {
+  liveness: Liveness
+}
+
+schema {
+  query: Query
+}

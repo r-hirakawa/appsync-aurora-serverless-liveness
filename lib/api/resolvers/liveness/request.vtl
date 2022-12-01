@@ -1,0 +1,11 @@
+## SQLステートメントの定義
+#set ($statement = "SELECT 1 FROM dual")
+
+## リクエストテンプレートの定義
+## @see https://docs.aws.amazon.com/ja_jp/appsync/latest/devguide/tutorial-rds-resolvers.html
+{
+    "version": "2018-05-29",
+    "statements": [
+        $util.toJson(${statement})
+    ]
+}

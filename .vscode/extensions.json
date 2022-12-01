@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    // 共通
+    "ms-ceintl.vscode-language-pack-ja",
+    // コーディング標準
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    // AWS
+    "amazonwebservices.aws-toolkit-vscode",
+    // おすすめ拡張機能
+    "dsznajder.es7-react-js-snippets"
+  ]
+}

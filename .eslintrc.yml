@@ -1,0 +1,33 @@
+---
+root: true
+
+env:
+  browser: true
+  es2021: true
+
+parser: '@typescript-eslint/parser'
+parserOptions:
+  sourceType: module
+
+plugins:
+  - '@typescript-eslint'
+  - react
+  - jest
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - plugin:jest/recommended
+  - prettier
+
+rules:
+  # JSX/TSX で React のインポートは不要
+  'react/react-in-jsx-scope': off
+  # 未使用の引数: 未使用の関数の引数については無視する
+  'no-unused-vars': off
+  '@typescript-eslint/no-unused-vars': [error, { args: none }]
+  # 比較演算子は厳密等価・不等価演算子（===, !==）の利用を推奨
+  'eqeqeq': ['error', 'always']

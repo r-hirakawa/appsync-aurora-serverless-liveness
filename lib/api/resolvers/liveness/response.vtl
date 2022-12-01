@@ -1,0 +1,9 @@
+## レスポンステンプレートの定義
+## @see https://docs.aws.amazon.com/ja_jp/appsync/latest/devguide/tutorial-rds-resolvers.html
+
+## RDS 疎通状態を返す
+#if ($ctx.error && $ctx.error.message.contains("08S01"))
+  $utils.toJson({ "status": "DOWN" })
+#else
+  $utils.toJson({ "status": "UP" })
+#end

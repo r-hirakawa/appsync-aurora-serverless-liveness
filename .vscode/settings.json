@@ -1,0 +1,18 @@
+{
+  // VSCode 標準化
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+
+  // 既定のフォーマッタ：Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ESLint & Prettier の実行設定
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true
+}
